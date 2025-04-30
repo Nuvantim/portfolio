@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tech Stack Gallery</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8fafc;
+        }
+        
+        .slider-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 140px;
+            margin: 40px 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        .slider-track {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            gap: 50px;
+            padding: 0 30px;
+            animation: slideLeft 60s linear infinite;
+        }
+        
+        .tech-icon {
+            height: 60px;
+            width: auto;
+            transition: transform 0.4s ease;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.08));
+            flex-shrink: 0;
+            opacity: 0.9;
+        }
+        
+        .tech-icon:hover {
+            transform: scale(1.12);
+            opacity: 1;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.12));
+        }
+        
+        @keyframes slideLeft {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        h1 {
+            text-align: center;
+            color: #1e293b;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 2.2rem;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tech Stack Gallery</h1>
+    <p class="subtitle">Icons sliding smoothly from right to left</p>
+    
+    <div class="slider-container">
+        <div class="slider-track" id="slider">
+            <!-- Simple Icons -->
+            <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" class="tech-icon">
+            <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" class="tech-icon">
+            <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" class="tech-icon">
+            <img src="https://cdn.simpleicons.org/golang/00ADD8" alt="Go" class="tech-icon">
+            
+            <!-- Skill Icons -->
+            <img src="https://skillicons.dev/icons?i=react" alt="React" class="tech-icon">
+            <img src="https://skillicons.dev/icons?i=vue" alt="Vue" class="tech-icon">
+            <img src="https://skillicons.dev/icons?i=flutter" alt="Flutter" class="tech-icon">
+            <img src="https://skillicons.dev/icons?i=electron" alt="Electron" class="tech-icon">
+            
+            <!-- TechIcons -->
+            <img src="https://techicons.dev/icons?i=nodejs" alt="Node.js" class="tech-icon">
+            <img src="https://techicons.dev/icons?i=express" alt="Express" class="tech-icon">
+            <img src="https://techicons.dev/icons?i=fastapi" alt="FastAPI" class="tech-icon">
+            <img src="https://techicons.dev/icons?i=spring" alt="Spring" class="tech-icon">
+            
+            <!-- VectorLogoZone -->
+            <img src="https://www.vectorlogo.zone/logos/nestjs/nestjs-icon.svg" alt="NestJS" class="tech-icon">
+            <img src="https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg" alt="GraphQL" class="tech-icon">
+            <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="MongoDB" class="tech-icon">
+            <img src="https://www.vectorlogo.zone/logos/redis/redis-icon.svg" alt="Redis" class="tech-icon">
+            
+            <!-- Official Logos -->
+            <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker" class="tech-icon">
+            <img src="https://kubernetes.io/images/favicon.png" alt="Kubernetes" class="tech-icon">
+            <img src="https://www.terraform.io/favicon.ico" alt="Terraform" class="tech-icon">
+            <img src="https://git-scm.com/favicon.ico" alt="Git" class="tech-icon">
+        </div>
+    </div>
+
+    <script>
+        // Duplikat item untuk efek loop mulus
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.getElementById('slider');
+            slider.innerHTML += slider.innerHTML;
+            
+            // Preload semua gambar
+            const images = document.querySelectorAll('.tech-icon');
+            images.forEach(img => {
+                new Image().src = img.src;
+            });
+        });
+    </script>
+</body>
+</html>
