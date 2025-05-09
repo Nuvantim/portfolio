@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project & Certification Tabs</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #f5f7fa;
+        padding: 40px;
+        color: #333;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .tab-btn {
+        padding: 12px 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        color: #64748b;
+        position: relative;
+        transition: all 0.3s ease;
+      }
+
+      .tab-btn.active {
+        color: #3b82f6;
+      }
+
+      .tab-btn.active::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #3b82f6;
+      }
+
+      .tab-content {
+        display: none;
+      }
+
+      .tab-content.active {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 25px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: cardEntrance 0.6s ease-out forwards;
+      }
+
+      @keyframes cardEntrance {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .card:hover {
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .card-img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        transform: scale(1);
+        transition: transform 0.5s ease;
+      }
+
+      .card:hover .card-img {
+        transform: scale(1.05);
+      }
+
+      .card-body {
+        padding: 20px;
+      }
+
+      .card-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #1e293b;
+      }
+
+      .card-text {
+        color: #64748b;
+        font-size: 14px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+      }
+
+      .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px 20px;
+      }
+
+      .tags {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .tag {
+        background-color: #e2e8f0;
+        color: #334155;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .card-actions {
+        display: flex;
+        gap: 10px;
+      }
+
+      .btn {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .btn-primary {
+        background-color: #3b82f6;
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background-color: #2563eb;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+      }
+
+      .btn-secondary {
+        background-color: #e2e8f0;
+        color: #334155;
+      }
+
+      .btn-secondary:hover {
+        background-color: #cbd5e1;
+        transform: translateY(-2px);
+      }
+
+      @media (max-width: 768px) {
+        .tab-content.active {
+          grid-template-columns: 1fr;
+        }
+
+        .tabs {
+          flex-wrap: wrap;
+        }
+
+        .tab-btn {
+          padding: 10px 15px;
+          font-size: 14px;
+        }
+
+        .card {
+          animation: cardEntranceMobile 0.6s ease-out forwards;
+        }
+
+        .card-actions {
+          flex-direction: column;
+          width: 100%;
+        }
+
+        .btn {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+
+      @keyframes cardEntranceMobile {
+        from {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="projects">Projects</button>
+        <button class="tab-btn" data-tab="certifications">
+          Certifications
+        </button>
+      </div>
+
+      <div class="tab-content active" id="projects">
+        <!-- Project Cards -->
+        <div class="card" style="animation-delay: 0.1s">
+          <img
+            src="https://via.placeholder.com/400x180?text=E-Commerce+App"
+            alt="E-Commerce App"
+            class="card-img"
+          >
+          <div class="card-body">
+            <h3 class="card-title">E-Commerce Website</h3>
+            <p class="card-text">
+              A full-featured e-commerce platform with payment integration,
+              product management, and user authentication.
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-secondary">
+                <i class="fas fa-code"></i> Code
+              </button>
+              <button class="btn btn-primary">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="animation-delay: 0.2s">
+          <img
+            src="https://via.placeholder.com/400x180?text=Task+App"
+            alt="Task App"
+            class="card-img"
+          >
+          <div class="card-body">
+            <h3 class="card-title">Task Management App</h3>
+            <p class="card-text">
+              A productivity application for managing tasks with drag-and-drop
+              functionality and team collaboration.
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="tags">
+              <span class="tag">Vue.js</span>
+              <span class="tag">Firebase</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-secondary">
+                <i class="fab fa-github"></i> Source
+              </button>
+              <button class="btn btn-primary">
+                <i class="fas fa-play"></i> Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="animation-delay: 0.3s">
+          <img
+            src="https://via.placeholder.com/400x180?text=Weather+App"
+            alt="Weather App"
+            class="card-img"
+          >
+          <div class="card-body">
+            <h3 class="card-title">Weather Dashboard</h3>
+            <p class="card-text">
+              Real-time weather information with 5-day forecast using data from
+              multiple weather APIs.
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">API</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-secondary">
+                <i class="fas fa-code-branch"></i> Repo
+              </button>
+              <button class="btn btn-primary">
+                <i class="fas fa-globe"></i> Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="certifications">
+        <!-- Certification Cards -->
+        <div class="card" style="animation-delay: 0.1s">
+          <img
+            src="https://via.placeholder.com/400x180?text=AWS+Certified"
+            alt="AWS Certified"
+            class="card-img"
+          >
+          <div class="card-body">
+            <h3 class="card-title">AWS Certified Developer</h3>
+            <p class="card-text">
+              Demonstrates proficiency in developing, deploying, and debugging
+              cloud-based applications using AWS.
+            </p>
+          </div>
+          <div class="card-footer">
+            <span class="tag">Cloud</span>
+            <button class="btn btn-primary">
+              <i class="fas fa-certificate"></i> View Credential
+            </button>
+          </div>
+        </div>
+
+        <div class="card" style="animation-delay: 0.2s">
+          <img
+            src="https://via.placeholder.com/400x180?text=Google+Cert"
+            alt="Google Certification"
+            class="card-img"
+          >
+          <div class="card-body">
+            <h3 class="card-title">Google Data Analytics</h3>
+            <p class="card-text">
+              Professional certificate covering data cleaning, analysis,
+              visualization, and tools like R and Tableau.
+            </p>
+          </div>
+          <div class="card-footer">
+            <span class="tag">Data</span>
+            <button class="btn btn-primary">
+              <i class="fas fa-certificate"></i> View Credential
+            </button>
+          </div>
+        </div>
+
+        <div class="card" style="animation-delay: 0.3s">
+          <img
+            src="https://via.placeholder.com/400x180?text=React+Cert"
+            alt="React Certification"
+            class="card-img"
+          >
+          <div class="card-body">
+            <h3 class="card-title">React Advanced Concepts</h3>
+            <p class="card-text">
+              Advanced React patterns including hooks, context API, performance
+              optimization, and testing.
+            </p>
+          </div>
+          <div class="card-footer">
+            <span class="tag">Frontend</span>
+            <button class="btn btn-primary">
+              <i class="fas fa-certificate"></i> View
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabBtns = document.querySelectorAll(".tab-btn");
+        const tabContents = document.querySelectorAll(".tab-content");
+
+        tabBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            // Remove active class from all buttons and contents
+            tabBtns.forEach((btn) => btn.classList.remove("active"));
+            tabContents.forEach((content) => {
+              content.classList.remove("active");
+              // Reset animation for cards when switching tabs
+              const cards = content.querySelectorAll(".card");
+              cards.forEach((card) => {
+                card.style.opacity = "0";
+                card.style.transform = window.innerWidth > 768
+                  ? "translateY(20px)"
+                  : "translateX(-20px)";
+              });
+            });
+
+            // Add active class to clicked button
+            btn.classList.add("active");
+
+            // Show corresponding content
+            const tabId = btn.getAttribute("data-tab");
+            const activeContent = document.getElementById(tabId);
+            activeContent.classList.add("active");
+
+            // Trigger animation for cards in active tab
+            const cards = activeContent.querySelectorAll(".card");
+            cards.forEach((card, index) => {
+              setTimeout(() => {
+                card.style.animation = window.innerWidth > 768
+                  ? "cardEntrance 0.6s ease-out forwards"
+                  : "cardEntranceMobile 0.6s ease-out forwards";
+                card.style.animationDelay = `${index * 0.1}s`;
+              }, 10);
+            });
+          });
+        });
+
+        // Initialize animation for first tab
+        const initialCards = document.querySelector("#projects")
+          .querySelectorAll(".card");
+        initialCards.forEach((card, index) => {
+          card.style.animationDelay = `${index * 0.1}s`;
+          card.style.animation = "cardEntrance 0.6s ease-out forwards";
+        });
+      });
+    </script>
+  </body>
+</html>

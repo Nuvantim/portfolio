@@ -1,333 +1,620 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="pt-br">
+  <head>
     <title>Portfolio Yoga Krisna</title>
-    <!-- Meta -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio Yoga Krisna">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
-    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="dribbble.ico">
+    <!-- Template css Files -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
-        type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- tab portfolio -->
+    <link rel="stylesheet" href="css/tabs.css">
+    <script type="text/javascript" src="js/tabs.js"></script>
 
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
+    <!-- Animation Skill -->
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <script type="text/javascript" src="js/animation.js"></script>
 
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Live Style Switcher - Demo Only -->
+    <link
+      rel="stylesheet"
+      class="alternate-style"
+      title="pink"
+      href="css/skins/pink.css"
+      type="text/css"
+    >
+    <link
+      rel="stylesheet"
+      class="alternate-style"
+      title="blue"
+      href="css/skins/blue.css"
+      type="text/css"
+      disabled
+    >
+    <link
+      rel="stylesheet"
+      class="alternate-style"
+      title="green"
+      href="css/skins/green.css"
+      type="text/css"
+      disabled
+    >
+    <link
+      rel="stylesheet"
+      class="alternate-style"
+      title="orange"
+      href="css/skins/orange.css"
+      type="text/css"
+      disabled
+    >
+    <link
+      rel="stylesheet"
+      class="alternate-style"
+      title="yellow"
+      href="css/skins/yellow.css"
+      type="text/css"
+      disabled
+    >
+    <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
+  </head>
 
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
-    <!-- github activity css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- Preloader End -->
 
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- Main Container -->
+    <div class="main-container">
+      <!-- Aside -->
+      <div class="aside">
+        <!-- Nav Toggler Btn -->
+        <div class="nav-toggler">
+          <span></span>
+        </div>
+        <div class="aside-inner">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="#">Portfolio</a>
+          </div>
+          <!-- Nav -->
+          <ul class="nav">
+            <li>
+              <a href="#home" class="active"><i class="fa fa-home"></i> Home</a>
+            </li>
+            <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+            <li>
+              <a href="#portfolio"><i class="fa fa-list"></i> Portfolio</a>
+            </li>
+          </ul>
+          <!-- Copyright -->
+          <div class="copyright-text">
+            <!-- <strong>Copyright &copy; <span id="tahun"></span></a>.</strong><p>All rights reserved.</p> -->
+          </div>
+        </div>
+      </div>
+      <!-- Aside End -->
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Home Section -->
+        <section class="home section active" id="home">
+          <div class="container">
+            <div class="intro">
+              <img
+                src="asset/images/char.png"
+                alt="profile"
+                class="shadow-dark"
+              >
+              <h1>Syeh Abdi Yoga Krisna</h1>
+              <span class="iTyped"></span>
+              <div class="social-links">
+                <a href="https://www.instagram.com/abdiyoga85"><i
+                    class="fa fa-instagram"
+                  ></i></a>
+                <a
+                  href="https://id.linkedin.com/in/syeh-abdi-yoga-krisna-720b88303"
+                ><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/Kalveir"><i class="fa fa-github"></i
+                  ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Home Section End -->
 
-</head>
-
-<body>
-    <!-- ******HEADER****** -->
-    <header class="header">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col">
-                    <img class="profile-image img-fluid float-start rounded-circle" width="160px" height="160px"
-                        src="assets/images/profile.jpg" alt="profile image" />
-                    <div class="profile-content">
-                        <h1 class="name">Syeh Abdi Yoga Krisna</h1>
-                        <h2 class="desc">Programmer</h2>
-                        <ul class="social list-inline">
-                            <li class="list-inline-item"><a href="https://www.instagram.com/abdiyoga85"
-                                    target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a
-                                    href="https://id.linkedin.com/in/syeh-abdi-yoga-krisna-720b88303" target="_blank"><i
-                                        class="fab fa-linkedin-in"></i></a></li>
-                            <li class="list-inline-item"><a href="https://github.com/Kalveir" target="_blank"><i
-                                        class="fab fa-github-alt"></i></a></li>
-                        </ul>
-                    </div><!--//profile-->
-                </div><!--//col-->
-                <div class="col-12 col-md-auto">
-                    <div class="dark-mode-switch d-flex">
-                        <div class="form-check form-switch mx-auto mx-md-0">
-                            <input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
-                            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+        <!-- About Section -->
+        <section class="about section" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>About Me</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="about-content padd-15">
+                <div class="row">
+                  <div class="about-text padd-15">
+                    <p style="text-align: justify">
+                      Junior Developer with experience in web-based system
+                      development using the Laravel framework, as well as in
+                      building modular and scalable backend architectures with
+                      Golang. Skilled in implementing both relational and
+                      non-relational database systems, with a focus on data
+                      consistency and performance. Proficient in using Docker
+                      within Linux server ecosystems for container-based
+                      deployment. Implements systematic software development
+                      workflows and continuously improves technical skills
+                      through self-learning and exploration of the latest
+                      technologies. Committed to delivering efficient, reliable,
+                      and sustainable digital solutions.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="personal-info padd-15">
+                    <h3 class="title">Contact</h3>
+                    <div class="row">
+                      <div>
+                        <div class="info-item padd-15">
+                          <p>
+                            Email : <br>
+                            <span>yogakrisna567@gmail.com</span>
+                          </p>
                         </div>
-                    </div><!--//dark-mode-switch-->
-                </div><!--//col-->
-            </div><!--//row-->
-        </div><!--//container-->
-    </header><!--//header-->
+                        <div class="info-item padd-15">
+                          <p>
+                            Phone : <br>
+                            <span>+6285859335964</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills padd-15">
+                    <div class="row">
+                      <h3 class="title">Tech Skill</h3>
+                      <div class="tech-showcase" id="techShowcase">
+                        <!-- Items will be created by JavaScript -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-    <div class="container sections-wrapper py-5">
-        <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p style="text-align: justify;">Seorang Junior Programmer dengan keahlian mendalam pada pengembangan dan pengujian perangkat lunak. Menguasai dengan baik framework Laravel dan Golang untuk membangun perangkat lunak yang efsien, serta memiliki kompetensi dalam manajemen server Linux dan administrasi jaringan, termasuk konfigurasi, pemeliharaan, dan pemecahan masalah. Berkomitmen untuk meningkatkan keterampilan dan mengikuti perkembangan teknologi terkini agar dapat memberikan kontribusi yang lebih besar bagi perusahaan.</p>
-
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-
-                <section class="latest section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Latest Projects</h2>
-                        <div class="content">
-                            <!-- GoStoreAPI -->
-                            <div class="item row">
-                                <a class="col-md-4 col-12" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/project/store-api.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://starring-nuts-securities-ebook.trycloudflare.com" target="_blank">Go-Store-API</a></h3>
-                                    <p class="mb-2 " style="text-align: justify;">
-                                        GoStoreAPI adalah RESTfulAPI yang dirancang untuk mendukung platform e-commerce atau sistem manajemen toko. API ini menyediakan endpoint terstruktur untuk menangani operasi inti seperti manajemen produk, kategori, transaksi, autentikasi pengguna, serta fitur-fitur penting lainnya untuk toko online atau aplikasi berbasis inventaris.
-                                    </p>
-                                    <p><a class="more-link" href="https://github.com/Kalveir/GoStoreAPI"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-                            <!-- SPMI -->
-                            <div class="item row">
-                                <a class="col-md-4 col-12" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/project/spmi.jpg" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://spmi.unmerpas.ac.id" target="_blank">Sistem
-                                            Penjaminan Mutu Internal Universitas Merdeka Pasuruan</a></h3>
-                                    <p class="mb-2 " style="text-align: justify;">Sistem yang dirancang untuk memantau,
-                                        mengevaluasi, dan meningkatkan kualitas mutu pendidikan Universitas Merdeka
-                                        Pasuruan melalui pengumpulan data, analisis, dan umpan balik dari auditor
-                                        internal.</p>
-                                    <p><a class="more-link" href="https://github.com/Kalveir/SPMI_UNMERPAS"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-                            <!-- Perpus-BSIP -->
-                            <div class="item row">
-                                <a class="col-md-4 col-12" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/project/perpustakaan.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://mn-diagnostic-threats-mistakes.trycloudflare.com"
-                                            target="_blank">Sistem Informasi Perpustakaan BSIP
-                                            Ruminansia Besar</a></h3>
-                                    <p class="mb-2" style="text-align: justify;">Sistem yang membantu pengelolaan buku,
-                                        peminjaman, dan data pengunjung dengan tujuan meningkatkan efisiensi kerja dan
-                                        menghemat waktu bagi petugas perpustakaan.</p>
-                                    <p><a class="more-link" href="https://github.com/Kalveir/Perpus-BSIP"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-                            <a class="btn btn-cta-primary" href="https://github.com/Kalveir">More on GitHub <i
-                                    class="fas fa-chevron-right pt-1"></i></a>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-
-                <section class="latest section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Certifications</h2>
-                        <div class="content">
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/certification/hak_cipta.jpg" alt="certification
-                                " />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://pdki-indonesia.dgip.go.id/link/454330303230323434383936317c636f70797269676874" target="_blank">Hak Cipta </a>
-                                    </h3><span class="place">Direktorat Jendral
-                                        Kekayaan Intelektual</span>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-                            <div class="item row">
-                                <a class="col-md-4 col-12" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/certification/adinusa.png" alt="certification
-                                " />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a
-                                            href="https://adinusa.id/course/publisher/show/1fe104a6-b601-4e86-aec2-ce2899f67269"
-                                            target="_blank">Linux System Administrator </a></h3><span
-                                        class="place">Adinusa</span>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-                            <div class="item row">
-                                <a class="col-md-4 col-12" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/certification/coursera.jpg" alt="certification
-                                " />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a
-                                            href="https://www.coursera.org/verify/professional-cert/2MY6223U8YEG"
-                                            target="_blank">Google IT Support</a></h3><span
-                                        class="place">Coursera</span>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-                            <div class="item row">
-                                <a class="col-md-4 col-12" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/certification/alibaba.png" alt="certification
-                                " />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a
-                                            href="https://www.credly.com/badges/70d62990-5ac8-4824-abee-9944d0bef43c"
-                                            target="_blank">Certified Developer</a></h3><span
-                                        class="place">Alibaba Cloud</span>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-                            <div class="item row">
-                                <a class="col-md-4 col-12" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/certification/cisco2.jpg" alt="certification
-                                " />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a
-                                            href="https://www.credly.com/badges/3f10b4a3-098c-4ad4-879e-23f43e18d1ca"
-                                            target="_blank">Network Defense</a></h3><span
-                                        class="place">Cisco Network Academy</span>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-                            <a class="btn btn-cta-secondary"
-                                href="https://id.linkedin.com/in/syeh-abdi-yoga-krisna-720b88303">More on LinkedIn<i
-                                    class="fas fa-chevron-right pt-1"></i></a>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-
-                <section class="experience section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">Web Developer - <span class="place">BSIP Ruminansia Besar</span> <span
-                                        class="year">(Februari, 2023 - Maret, 2023)</span></h3>
-                                <ul>
-                                    <li>Membangun website manajemen perpustakaan menggunakan framework Laravel untuk
-                                        otomatisasi katalog buku, data pengunjung, dan riwayat peminjaman.</li>
-                                    <li>Melakukan pengujian fungsionalitas dan keamanan website serta memperbaiki bug
-                                        yang ditemukan selama pengembangan.</li>
-                                    <li>Menerima umpan balik dari pustakawan untuk memastikan setiap fitur beroperasi
-                                        dengan baik sesuai prosedur manajemen perpustakaan.</li>
-                                    <li>Pemeliharaan rutin dan penambahan fitur untuk efisiensi dan pengalaman pengguna.
-                                    </li>
-                                </ul>
-                            </div><!--//item-->
-
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-            </div><!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-                <aside class="info aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Pasuruan,
-                                    Jawa Timur</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
-                                        href="mailto:yogakrisna567@gmail.com">yogakrisna567@gmail.com</a></li>
-                                <li><i class="fas fa-phone"></i><span class="sr-only">Email:</span><a
-                                        href="https://wa.me/6285859335964">+62 8585 9335 964</a></li>
+                <div class="row">
+                  <div class="education padd-15">
+                    <h3 class="title">Education</h3>
+                    <div class="row">
+                      <div class="timeline-box padd-15">
+                        <div class="timeline shadow-dark">
+                          <!-- timeline Item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h6 class="timeline-date">
+                              <i class="fa fa-calendar"></i> 2020 - 2024
+                            </h6>
+                            <h4 class="timeline-title">
+                              Bachelor of Informatic Engineering
+                            </h4>
+                            <p
+                              class="timeline-text"
+                              style="font-style: italic; opacity: 0.7"
+                            >
+                              Merdeka University Pasuruan
+                            </p>
+                            <p class="timeline-text">
+                              IPK/GPA : <strong>3.67</strong>
+                            </p>
+                          </div>
+                          <!-- timeline Item End -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="experience padd-15">
+                    <h3 class="title">Experience</h3>
+                    <div class="row">
+                      <div class="timeline-box padd-15">
+                        <div class="timeline shadow-dark">
+                          <!-- timeline Item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h6 class="timeline-date">
+                              <i class="fa fa-calendar"></i> 2013 - 2015
+                            </h6>
+                            <h4 class="timeline-title">Web Developer</h4>
+                            <p
+                              class="timeline-text"
+                              style="font-style: italic; opacity: 0.7"
+                            >
+                              Large Ruminant Agricultural Standards Agency
+                            </p>
+                            <ul
+                              class="timeline-text"
+                              style="text-align: justify"
+                            >
+                              <li>
+                                Developed a comprehensive library website
+                                utilizing Laravel framework to automate book
+                                cataloging, visitor tracking, and loan history
+                                management
+                              </li>
+                              <br>
+                              <li>
+                                Conducted rigorous functionality and security
+                                testing, resolving identified bugs throughout
+                                the development lifecycle
+                              </li>
+                              <br>
+                              <li>
+                                Collaborated with librarians to gather feedback,
+                                ensuring all features complied with standard
+                                library management procedures
+                              </li>
+                              <br>
+                              <li>
+                                Performed regular system maintenance and
+                                implemented feature enhancements to optimize
+                                operational efficiency and user experience
+                              </li>
+                              <br>
                             </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//aside-->
+                          </div>
+                          <!-- timeline Item End -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- About Section End -->
 
-                <aside class="skills aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Tech Stack</h2>
-                        <div class="content">
-                            <p class="intro">
-                             <!-- skills -->
-                            <div class="d-flex justify-content-center align-items-center">
-                                <div>
-                                    <img class="rounded img-fluid mb-4" src="assets/tech/Laravel.svg" alt="Laravel" width="70px" height="70px">
-                                    <img class="rounded img-fluid mb-4" src="assets/tech/Bootstrap.svg" alt="Bootstrap" width="70px" height="70px">
-                                    <img class="rounded img-fluid mb-4" src="assets/tech/MySQL.svg" alt="MySQL" width="70px" height="70px">
-                                    <img class="rounded img-fluid mb-4" src="assets/tech/Go.svg" alt="Go" width="70px" height="70px">
-                                    <img class="rounded img-fluid mb-4" src="assets/tech/JavaScript.svg" alt="JavaScript" width="70px" height="70px">
-                                    <img class="rounded img-fluid mb-4" src="assets/tech/Linux.svg" alt="Linux" width="70px" height="70px">
-                                    <img class="rounded img-fluid mb-4" src="assets/tech/Git.svg" alt="Laravel" width="70px" height="70px">
-                                    <img class="rounded img-fluid mb-4" src="assets/tech/Docker.svg" alt="Laravel" width="70px" height="70px">
-                                </div>
-                            </div>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
+        <!-- Service Section -->
+        <section class="service section" id="portfolio">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Portfolio</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="container">
+                <div class="tabs">
+                  <button class="tab-btn active" data-tab="projects">
+                    Projects
+                  </button>
+                  <button class="tab-btn" data-tab="certifications">
+                    Certifications
+                  </button>
+                </div>
+                <!-- Project -->
+                <div class="tab-content active" id="projects">
+                  <!-- Project Cards -->
+                  <!-- GoStoreAPI -->
+                  <div class="card" style="animation-delay: 0.3s">
+                    <img
+                      src="asset/images/project/store-api.png"
+                      alt="GoStoreAPI"
+                      class="card-img"
+                    >
+                    <div class="card-body">
+                      <h3 class="card-title">GoStoreAPI</h3>
+                      <p class="card-text">
+                        An e-commerce API for product management, transactions,
+                        and user administration.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="tags"></div>
+                      <div class="card-actions">
+                        <a
+                          href="https://github.com/Kalveir/GoStoreAPI"
+                          class="button button-secondary"
+                          target="_blank"
+                        >
+                          <i class="fa fa-code-fork"></i> Repo
+                        </a>
+                        <a
+                          href="https://starring-nuts-securities-ebook.trycloudflare.com/"
+                          class="button button-primary"
+                          target="_blank"
+                        >
+                          <i class="fa fa-globe"></i> Demo
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- SPMI -->
+                  <div class="card" style="animation-delay: 0.3s">
+                    <img
+                      src="asset/images/project/spmi.jpg"
+                      alt="SPMI"
+                      class="card-img"
+                    >
+                    <div class="card-body">
+                      <h3 class="card-title">
+                        UNMERPAS Quality Assurance System
+                      </h3>
+                      <p class="card-text">
+                        An e-commerce API for product management, transactions,
+                        and user administration.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="tags"></div>
+                      <div class="card-actions">
+                        <a
+                          href="https://github.com/Kalveir/SPMI_UNMERPAS"
+                          class="button button-secondary"
+                          target="_blank"
+                        >
+                          <i class="fa fa-code-fork"></i> Repo
+                        </a>
+                        <a
+                          href="https://spmi.unmerpas.ac.id"
+                          class="button button-primary"
+                          target="_blank"
+                        >
+                          <i class="fa fa-globe"></i> Demo
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- BSIP Perpus -->
+                  <div class="card" style="animation-delay: 0.3s">
+                    <img
+                      src="asset/images/project/perpustakaan.png"
+                      alt="bsip Perpus"
+                      class="card-img"
+                    >
+                    <div class="card-body">
+                      <h3 class="card-title">BSIP Library Management System</h3>
+                      <p class="card-text">
+                        A system for book management, loan processing, and
+                        visitor data tracking for libraries.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="tags"></div>
+                      <div class="card-actions">
+                        <a
+                          href="https://github.com/Kalveir/Perpus-BSIP"
+                          class="button button-secondary"
+                          target="_blank"
+                        >
+                          <i class="fa fa-code-fork"></i> Repo
+                        </a>
+                        <a
+                          href="https://mn-diagnostic-threats-mistakes.trycloudflare.com"
+                          class="button button-primary"
+                          target="_blank"
+                        >
+                          <i class="fa fa-globe"></i> Demo
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Certification -->
+                <div class="tab-content" id="certifications">
+                  <!-- Copyright -->
+                  <div class="card" style="animation-delay: 0.1s">
+                    <img
+                      src="asset/images/certification/hak_cipta.jpg"
+                      alt="Copyright"
+                      class="card-img"
+                    >
+                    <div class="card-body">
+                      <h3 class="card-title">Copyright Certification</h3>
+                      <span style="font-style: italic; opacity: 0.7">DJKI</span>
+                    </div>
+                    <div class="card-footer">
+                      <a
+                        href="https://pdki-indonesia.dgip.go.id/link/454330303230323434383936317c636f70797269676874"
+                        class="button button-primary"
+                        target="_blank"
+                      >
+                        <i class="fa fa-certificate"></i> Credentials
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Adinusa -->
+                  <div class="card" style="animation-delay: 0.1s">
+                    <img
+                      src="asset/images/certification/adinusa.png"
+                      alt="Adinus'a"
+                      class="card-img"
+                    >
+                    <div class="card-body">
+                      <h3 class="card-title">Linux System Administrator</h3>
+                      <span style="font-style: italic; opacity: 0.7"
+                      >Adinusa</span>
+                    </div>
+                    <div class="card-footer">
+                      <a
+                        href="https://adinusa.id/course/publisher/show/1fe104a6-b601-4e86-aec2-ce2899f67269"
+                        class="button button-primary"
+                        target="_blank"
+                      >
+                        <i class="fa fa-certificate"></i> Credentials
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Coursera -->
+                  <div class="card" style="animation-delay: 0.1s">
+                    <img
+                      src="asset/images/certification/coursera.jpg"
+                      alt="Coursera"
+                      class="card-img"
+                    >
+                    <div class="card-body">
+                      <h3 class="card-title">Google IT Support</h3>
+                      <span style="font-style: italic; opacity: 0.7"
+                      >Coursera</span>
+                    </div>
+                    <div class="card-footer">
+                      <a
+                        href="https://www.coursera.org/verify/professional-cert/2MY6223U8YEG"
+                        class="button button-primary"
+                        target="_blank"
+                      >
+                        <i class="fa fa-certificate"></i> Credentials
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Alibaba -->
+                  <div class="card" style="animation-delay: 0.1s">
+                    <img
+                      src="asset/images/certification/alibaba.png"
+                      alt="Alibaba"
+                      class="card-img"
+                    >
+                    <div class="card-body">
+                      <h3 class="card-title">Certified Developer</h3>
+                      <span style="font-style: italic; opacity: 0.7"
+                      >Alibaba Cloud</span>
+                    </div>
+                    <div class="card-footer">
+                      <a
+                        href="https://aliyun-aps-cloud-public.oss-cn-hangzhou.aliyuncs.com/img_7034784c88a6f0f8611d0ce88339c7dc.png"
+                        class="button button-primary"
+                        target="_blank"
+                      >
+                        <i class="fa fa-certificate"></i> Credentials
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Cisco-->
+                  <div class="card" style="animation-delay: 0.1s">
+                    <img
+                      src="asset/images/certification/cisco2.jpg"
+                      alt="cisco"
+                      class="card-img"
+                    >
+                    <div class="card-body">
+                      <h3 class="card-title">Network Defense</h3>
+                      <span style="font-style: italic; opacity: 0.7"
+                      >Cisco Network Academy</span>
+                    </div>
+                    <div class="card-footer">
+                      <a
+                        href="https://www.credly.com/badges/3f10b4a3-098c-4ad4-879e-23f43e18d1ca"
+                        class="button button-primary"
+                        target="_blank"
+                      >
+                        <i class="fa fa-certificate"></i> Credentials
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Main Content End -->
+    </div>
+    <!-- Main Container End -->
 
-                <aside class="education aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i>Teknik Informatika (Sarjana)</h3>
-                                <h4 class="university">Universitas Merdeka Pasuruan<span class="year">
-                                        (2020-2024)</span></h4>
-                                <h4 class="university">GPA/IPK : <strong><span>3.67</span></strong></h4>
-                                <br>
-                                <a class="btn btn-outline-warning" href="assets/academic/ijazah.pdf" target="_blank"><i
-                                        class="fas fa-download"></i>Ijazah</a>
-                                <a class="btn btn-outline-warning" href="assets/academic/transkrip_nilai.pdf"
-                                    target="_blank"><i class="fas fa-download"></i>Transkrip Nilai</a>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-            </div><!--//secondary-->
-        </div><!--//row-->
-    </div><!--//masonry-->
+    <!-- Lightbox -->
+    <div class="lightbox">
+      <div class="lightbox-content">
+        <div class="lightbox-close">&times;</div>
+        <img src="" alt="" onclick="nextItem()" class="lightbox-img">
+        <div class="lightbox-caption">
+          <div class="caption-text"></div>
+          <div class="caption-counter"></div>
+        </div>
+      </div>
+      <div class="lightbox-controls">
+        <div class="prev-item" onclick="prevItem()">
+          <i class="fa fa-angle-left"></i>
+        </div>
+        <div class="next-item" onclick="nextItem()">
+          <i class="fa fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Lightbox End -->
 
-    <!-- ******FOOTER****** -->
-    <footer class="footer">
-        <div class="container text-center">
-            <strong>Copyright &copy; <span id="tahun"></span></a>.</strong> All rights reserved.
-        </div><!--//container-->
-    </footer><!--//footer-->
+    <!-- Live Style Switcher - Demo Only -->
+    <div class="style-switcher">
+      <div class="toggle-style-switcher">
+        <i class="fa fa-cog fa-spin"></i>
+      </div>
+      <h5>Style Switcher</h5>
+      <ul>
+        <li>
+          <a
+            href="javascript:void(0);"
+            title="pink"
+            style="background-color: #ec1839"
+            onclick="setActiveStyle('pink')"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0);"
+            title="blue"
+            style="background-color: #2196f3"
+            onclick="setActiveStyle('blue')"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0);"
+            title="orange"
+            style="background-color: #fa5b0f"
+            onclick="setActiveStyle('orange')"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0);"
+            title="yellow"
+            style="background-color: #ffb400"
+            onclick="setActiveStyle('yellow')"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0);"
+            title="green"
+            style="background-color: #72b626"
+            onclick="setActiveStyle('green')"
+          ></a>
+        </li>
+      </ul>
+      <h5>Body Skin</h5>
+      <label>
+        <input
+          type="radio"
+          class="body-skin"
+          name="body-skin"
+          checked="true"
+          value="light"
+        > Light
+      </label>
+      <label>
+        <input type="radio" class="body-skin" name="body-skin" value="dark">
+        Dark
+      </label>
+    </div>
+    <!-- Live Style Switcher - Demo Only End -->
 
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script>
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
-</body>
-
+    <!-- Plugins -->
+    <script src="js/ityped.min.js"></script>
+    <!-- Template js -->
+    <script src="js/script.js"></script>
+    <!-- Live Style Js - Demo Only -->
+    <script src="js/styleSwitcher.js"></script>
+    <script type="text/javascript">
+      const now_year = new Date().getFullYear();
+      document.getElementById("tahun").textContent = now_year;
+    </script>
+  </body>
 </html>
-<script type="text/javascript">
-    const now_year = new Date().getFullYear();
-    document.getElementById('tahun').textContent = now_year;
-    // https://e-hakcipta.dgip.go.id/index.php/c?code=MzcxNWUxMjVmNjI3MzVmYzIxYTRjOTE5Yjg0OWJiYzQK
-</script>
