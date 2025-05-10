@@ -14,7 +14,7 @@ if (document.querySelector(".iTyped")) {
   window.ityped.init(document.querySelector(".iTyped"), {
     strings: [
       "Software Engineer",
-      "Junior SysAdmin",
+      "Junior SysAdmin / DevOps",
       "Back End Developer",
     ],
     loop: true,
