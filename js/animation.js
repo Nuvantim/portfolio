@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         name: "deno",
-        src: "asset/tech/language/deno.svg",
+        src: "asset/tech/language/Deno.svg",
       },
     ],
     // Framework
@@ -71,8 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
         src: "asset/tech/framework/fiber.svg",
       },
       {
-        name: "Keras",
-        src: "asset/tech/framework/keras.svg",
+        name: "TensorFlow",
+        src: "asset/tech/framework/TensorFlow.svg",
       },
       {
         name: "gRPC",
@@ -132,8 +132,8 @@ document.addEventListener("DOMContentLoaded", function () {
         src: "asset/tech/tool/Git.svg",
       },
       {
-        name: "Cloudflare",
-        src: "asset/tech/tool/Cloudflare.svg",
+        name: "Grafana",
+        src: "asset/tech/tool/Grafana.svg",
       },
     ],
   ];
