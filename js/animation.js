@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         name: "deno",
-        src: "asset/tech/language/Deno.svg",
+        src: "asset/tech/language/deno.svg",
       },
     ],
     // Framework
