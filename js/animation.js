@@ -105,16 +105,16 @@ document.addEventListener("DOMContentLoaded", function () {
         src: "asset/tech/os/Ubuntu.svg",
       },
       {
-        name: "CentOS",
-        src: "asset/tech/os/CentOS.svg",
+        name: "DB Visualizer",
+        src: "asset/tech/os/dbvis.svg",
       },
       {
-        name: "Gcp",
-        src: "asset/tech/os/Gcp.svg",
+        name: "Nginx",
+        src: "asset/tech/os/nginx.svg",
       },
       {
-        name: "Raspbery",
-        src: "asset/tech/os/Raspbery.svg",
+        name: "Bash",
+        src: "asset/tech/os/bash.svg",
       },
     ],
     // Tool
@@ -124,16 +124,16 @@ document.addEventListener("DOMContentLoaded", function () {
         src: "asset/tech/tool/Docker.svg",
       },
       {
-        name: "Kubernetes",
-        src: "asset/tech/tool/Kubernetes.svg",
+        name: "Github Action",
+        src: "asset/tech/tool/github-action.svg",
       },
       {
         name: "Git",
         src: "asset/tech/tool/Git.svg",
       },
       {
-        name: "Grafana",
-        src: "asset/tech/tool/Grafana.svg",
+        name: "RabbitMQ",
+        src: "asset/tech/tool/rabbitmq.svg",
       },
     ],
   ];
