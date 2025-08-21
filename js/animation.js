@@ -98,42 +98,61 @@ document.addEventListener("DOMContentLoaded", function () {
         src: "asset/tech/database/redis.svg",
       },
     ],
-    // os
+    // Office
+    [
+      {
+        name: "Microsoft Office",
+        src: "asset/tech/office/microsoft-office.svg",
+      },
+      {
+        name: "PostgreSQL",
+        src: "asset/tech/office/google-docs.svg",
+      },
+      {
+        name: "MongoDB",
+        src: "asset/tech/office/power-bi.svg",
+      },
+      {
+        name: "Redis",
+        src: "asset/tech/office/slack.svg",
+      },
+    ],
+    // tool
     [
       {
         name: "Ubuntu",
-        src: "asset/tech/os/Ubuntu.svg",
+        src: "asset/tech/tool/Ubuntu.svg",
       },
       {
         name: "DB Visualizer",
-        src: "asset/tech/os/dbvis.svg",
+        src: "asset/tech/tool/dbvis.svg",
       },
       {
-        name: "Nginx",
-        src: "asset/tech/os/nginx.svg",
+        name: "Caddy",
+        src: "asset/tech/tool/caddy.svg",
       },
       {
         name: "Bash",
-        src: "asset/tech/os/bash.svg",
+        src: "asset/tech/tool/bash.svg",
       },
     ],
-    // Tool
+    // Deploy
     [
       {
         name: "Docker",
-        src: "asset/tech/tool/Docker.svg",
+        src: "asset/tech/deploy/Docker.svg",
       },
       {
         name: "Github Action",
-        src: "asset/tech/tool/github-action.svg",
+        src: "asset/tech/deploy/github-action.svg",
       },
       {
         name: "Git",
-        src: "asset/tech/tool/Git.svg",
+        src: "asset/tech/deploy/Git.svg",
       },
       {
         name: "RabbitMQ",
-        src: "asset/tech/tool/rabbitmq.svg",
+        src: "asset/tech/deploy/rabbitmq.svg",
       },
     ],
   ];
