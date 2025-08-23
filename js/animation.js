@@ -67,8 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
         src: "asset/tech/framework/laravel.svg",
       },
       {
-        name: "Fiber",
-        src: "asset/tech/framework/fiber.svg",
+        name: "Apidog",
+        src: "asset/tech/framework/apidog.svg",
       },
       {
         name: "TensorFlow",
