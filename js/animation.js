@@ -105,16 +105,16 @@ document.addEventListener("DOMContentLoaded", function () {
         src: "asset/tech/office/microsoft-office.svg",
       },
       {
-        name: "PostgreSQL",
-        src: "asset/tech/office/google-docs.svg",
+        name: "Google Sheet",
+        src: "asset/tech/office/google-sheets.svg",
       },
       {
-        name: "MongoDB",
-        src: "asset/tech/office/power-bi.svg",
+        name: "Tableau",
+        src: "asset/tech/office/tableau.svg",
       },
       {
-        name: "Redis",
-        src: "asset/tech/office/slack.svg",
+        name: "Trello",
+        src: "asset/tech/office/trello.svg",
       },
     ],
     // tool
