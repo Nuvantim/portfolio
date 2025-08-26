@@ -71,8 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
         src: "asset/tech/framework/apidog.svg",
       },
       {
-        name: "TensorFlow",
-        src: "asset/tech/framework/TensorFlow.svg",
+        name: "Google Collab",
+        src: "asset/tech/framework/google-collab.svg",
       },
       {
         name: "gRPC",
