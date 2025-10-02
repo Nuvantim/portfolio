@@ -105,8 +105,8 @@ document.addEventListener("DOMContentLoaded", function () {
         src: "asset/tech/office/microsoft-office.svg",
       },
       {
-        name: "Google Sheet",
-        src: "asset/tech/office/google-sheets.svg",
+        name: "Canva",
+        src: "asset/tech/office/canva.svg",
       },
       {
         name: "Tableau",
