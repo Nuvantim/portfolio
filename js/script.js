@@ -13,9 +13,9 @@ window.addEventListener("load", function () {
 if (document.querySelector(".iTyped")) {
   window.ityped.init(document.querySelector(".iTyped"), {
     strings: [
-      "Software Engineer",
-      "Junior SysAdmin/DevOps",
-      "Back End Developer",
+      "👋 Hi, welcome!",
+      "💡 Glad to share my experience & skills",
+      "🤩 Hope you find it useful.",
     ],
     loop: true,
   });
