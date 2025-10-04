@@ -14,8 +14,8 @@ if (document.querySelector(".iTyped")) {
   window.ityped.init(document.querySelector(".iTyped"), {
     strings: [
       "👋 Hi, welcome!",
-      "💡 Glad to share my experience & skills",
-      "🤩 Hope you find it useful.",
+      "💡 Happy to share my journey",
+      "😎 Hope you enjoy it.",
     ],
     loop: true,
   });
