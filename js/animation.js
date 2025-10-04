@@ -113,8 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
         src: "asset/tech/office/tableau.svg",
       },
       {
-        name: "Trello",
-        src: "asset/tech/office/trello.svg",
+        name: "Notion",
+        src: "asset/tech/office/Notion.svg",
       },
     ],
     // tool
@@ -151,8 +151,8 @@ document.addEventListener("DOMContentLoaded", function () {
         src: "asset/tech/deploy/Git.svg",
       },
       {
-        name: "RabbitMQ",
-        src: "asset/tech/deploy/rabbitmq.svg",
+        name: "Mikrotik",
+        src: "asset/tech/deploy/Mikrotik.svg",
       },
     ],
   ];
