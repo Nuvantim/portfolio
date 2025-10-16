@@ -13,9 +13,9 @@ window.addEventListener("load", function () {
 if (document.querySelector(".iTyped")) {
   window.ityped.init(document.querySelector(".iTyped"), {
     strings: [
-      "👋 Hi, welcome!",
-      "💡 Happy to share my journey",
-      "😎 Hope you enjoy it.",
+      "Hi there! 👋",
+      "Welcome to my portfolio website. 🎉",
+      "Everything you need to know about me is right here 🌟.",
     ],
     loop: true,
   });
