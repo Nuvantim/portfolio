@@ -14,8 +14,8 @@ if (document.querySelector(".iTyped")) {
   window.ityped.init(document.querySelector(".iTyped"), {
     strings: [
       "Hi there! 👋",
-      "Welcome to my portfolio website. 🎉",
-      "Everything you need to know about me is right here 🌟.",
+      "Welcome to my portfolio. 🎉",
+      "Everything about me is here. 🌟",
     ],
     loop: true,
   });
